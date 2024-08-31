@@ -1,56 +1,6 @@
 {
   "cart": [
     {
-      "id": 0,
-      "productId": 2,
-      "amount": 4
-    },
-    {
-      "id": 1,
-      "productId": 1,
-      "amount": 1
-    },
-    {
-      "productId": 1,
-      "amount": 1,
-      "id": 2
-    },
-    {
-      "productId": 2,
-      "amount": 1,
-      "id": 3
-    },
-    {
-      "productId": 2,
-      "amount": 1,
-      "id": 4
-    },
-    {
-      "productId": 2,
-      "amount": 1,
-      "id": 5
-    },
-    {
-      "productId": 2,
-      "amount": 1,
-      "id": 6
-    },
-    {
-      "productId": 1,
-      "amount": 1,
-      "id": 7
-    },
-    {
-      "productId": 1,
-      "amount": 1,
-      "id": 8
-    },
-    {
-      "productId": 4,
-      "amount": 1,
-      "id": 9
-    },
-    {
       "productId": 1,
       "amount": 1,
       "id": 10
@@ -64,6 +14,11 @@
       "productId": 1,
       "amount": 1,
       "id": 12
+    },
+    {
+      "productId": 1,
+      "amount": 1,
+      "id": 13
     }
   ],
   "products": [
@@ -73,7 +28,8 @@
       "category": "Soccer",
       "price": 29.99,
       "brand": "Adidas",
-      "stock": 150
+      "stock": 150,
+      "description": "2 lb Soccer Ball made in the USA, standard US Soccer specs."
     },
     {
       "id": 2,
@@ -81,7 +37,8 @@
       "category": "Basketball",
       "price": 24.99,
       "brand": "Spalding",
-      "stock": 200
+      "stock": 200,
+      "description": "Made with authentic leather this basketball is the standard weight and dimensions of USA basketball sports equipment." 
     },
     {
       "id": 3,
@@ -89,7 +46,8 @@
       "category": "Tennis",
       "price": 89.99,
       "brand": "Wilson",
-      "stock": 75
+      "stock": 75,
+      "description": "Beat the local competition with this hand-crafted tennis racket that is well balanced in any hand."
     },
     {
       "id": 4,
@@ -97,7 +55,8 @@
       "category": "Baseball",
       "price": 49.99,
       "brand": "Rawlings",
-      "stock": 120
+      "stock": 120,
+      "description": "Hand-laced baseball glove with extra padding to protect those important fingers and hands while playing a superior game." 
     },
     {
       "id": 5,
@@ -105,7 +64,8 @@
       "category": "Golf",
       "price": 299.99,
       "brand": "Callaway",
-      "stock": 50
+      "stock": 50,
+      "description": "The great widow-maker golf club set. Take this set to the course and beat the competition to a pulp." 
     }
   ]
 }

@@ -41,7 +41,7 @@ export default function ProductList() {
   return (
     <>
       {" "}
-      <h2 className="display-5 mb-4">
+      <h2 className="display-5 mb-4 ">
         Check out these great Sporting Goods Deals.
       </h2>
       <div className="d-flex flex-wrap gap-3">

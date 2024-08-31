@@ -1,8 +1,9 @@
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
+import './App.css';
 
 export default function Root() {
   return (
-    <div className="container">
+    <div className="container background" >
       <ul className="nav bg-light mb-3 border-bottom">
         <li className="nav-item">
           <NavLink to="/" className="nav-link">

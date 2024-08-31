@@ -40,10 +40,9 @@ createRoot(document.getElementById("root")!).render(
 
 
 /* 
- - Add delete buttons for each of the cart
  - Display the amount of things in the cart from the shopping page
  - Add a "loading" message when clicking "Products"
- - Add details for each project
- - Add images for each sporting goods items
- - Change background
+ - Add details for each item
+ - Add images for each sporting goods item
+ - Give a total for the amount in the cart
 */

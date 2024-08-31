@@ -23,6 +23,7 @@ export default function ProductDetails() {
     <div>
         <h2>{product.name}</h2>
         <p>{product.brand}</p>
+        <p>{product.description}</p>
     </div>
   )
 }

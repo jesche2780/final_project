@@ -24,12 +24,11 @@ export default function CartList() {
       }
       setLoading(false);
     };
-    fetchCart();
+
     const fetchProducts = async () => {
       setLoading(true);
       try {
         const response = await fetch("http://localhost:3000/products");
-
         if (!response.ok) {
           setErrorMessage("Mistake somewhere in here..." + response.statusText);
         } else {
@@ -42,8 +41,24 @@ export default function CartList() {
       }
       setLoading(false);
     };
+
+    fetchCart();
     fetchProducts();
   }, []);
+
+  const deleteProducts = async (id: number) => {
+    try {
+      const response = await fetch(`http://localhost:3000/cart/${id}`, {
+        method: "DELETE",
+      });
+      if (!response.ok) {
+        throw new Error("Failed to delete the item");
+      }
+      setCartItems(cartItems.filter((item) => item.id !== id));
+    } catch (error: any) {
+      setErrorMessage("Mistake somewhere in here..." + error.message);
+    }
+  };
 
   return (
     <>
@@ -56,7 +71,12 @@ export default function CartList() {
         <table className="table table-striped">
           <tbody>
             {cartItems.map((item) => (
-              <CartItemRow item={item} key={item.id} products={products} />
+              <CartItemRow
+                item={item}
+                key={item.id}
+                products={products}
+                deleteProducts={deleteProducts}
+              />
             ))}
           </tbody>
         </table>
